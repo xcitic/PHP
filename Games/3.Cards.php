@@ -1,5 +1,3 @@
-#!/usr/bin/php
-
 <?php
 
   // Defining the suits
@@ -44,5 +42,24 @@
   foreach ($hands[1] as $card) {
     echo $card . "\n";
   }
+
+
+  // Calculate the odds of getting a certain card from the remaining deck
+  function calculate_odds($draw, $deck) {
+    $remaining = count($deck);
+    $odds = 0;
+    foreach ($deck as $card) {
+      if ( ($draw['face'] == $card['face'] && $draw['suit'] == $card['suit']) ||
+        ($draw['face'] == $card['face'] && $draw['suit'] == '') ) {
+          $odds++;
+        }
+    }
+    return $odds . ' in ' . $remaining;
+  }
+
+  $draw = array('face' => 'Ace', 'suit' => '');
+  echo implode(" of ", $draw) . ' : ' .calculate_odds($draw, $deck);
+
+
 
 ?>
