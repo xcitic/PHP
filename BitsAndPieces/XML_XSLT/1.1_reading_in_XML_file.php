@@ -11,8 +11,9 @@
 
   $data = file_get_contents($file);
 
-  if(!xml_parse($parse, $data, true)) {
+  if(!xml_parse($parser, $data, true)) {
     print "Parse Error! \n";
+    printf("Error report was %s", xml_error_string(xml_get_error_code($parser)));
   } else {
     print "Parsing complete \n";
   }
