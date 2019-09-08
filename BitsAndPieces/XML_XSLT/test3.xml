@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<newsitems>
+    <news type="programming">
+      <title>PHP 6.0 has been released!</title>
+    </news>
+
+    <news type="programming">
+      <title>Larry Wall switches to PHP!</title>
+    </news>
+
+    <news type="sci-fi">
+      <title>Cat lands on Mars!</title>
+    </news>
+
+    <news type="programming">
+      <title>XML takes over world!</title>
+    </news>
+</newsitems>
