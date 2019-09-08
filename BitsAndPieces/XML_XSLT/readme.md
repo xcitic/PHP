@@ -34,3 +34,11 @@ You can create a DOM tree using an event-based parser by using appropriate code 
 Reads in all the XML file at once, and converts it into a PHP object with
 all the elements of the XML file.
 Working with the data becomes easy as working with a PHP object.
+
+
+
+### XSLT
+An XML-based language that allows you to manipulate XML documents.
+PHP uses the Sablotron library.
+Can use PHP to find out which user agent a visitor is using, and then
+serve them the appropriate format; XHTMl, HTML2, WAP or anything elese. 
