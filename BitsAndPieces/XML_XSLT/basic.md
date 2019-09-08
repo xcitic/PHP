@@ -7,7 +7,7 @@ PHP main strategies to work with XML documents
 
 ###  1. Event-based Parsing
 Works through the XML documents and every time the parser encounters a new XML item, it calls a function you have defined.
-Expat is used by PHP as the parser for event-based parsing. 
+Expat is used by PHP as the parser for event-based parsing.
  You can specify the callback functions for a variety of events:
   + start of element
   + end of element
@@ -27,3 +27,10 @@ You can use the bracket notation to refer to different sections in the tree.
 Tree-based parsers are generally slower than event-based parsers. But they provide an easier interface to
 navigating through the underlying XML data.
 You can create a DOM tree using an event-based parser by using appropriate code for each callback function.
+
+
+
+### SimpleXML
+Reads in all the XML file at once, and converts it into a PHP object with
+all the elements of the XML file.
+Working with the data becomes easy as working with a PHP object.
